@@ -6,33 +6,47 @@ body, html {
     background-color: #f4f4f4;
 }
 
-.container {
-    display: flex; /* Enable side-by-side layout */
-    height: 100%; /* Make the container take up the full height of the viewport */
+/* Header Section */
+header {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.image-section, .text-section {
-    flex: 1; /* Split into equal halves */
-    min-width: 50%; /* Ensure each section is at least 50% wide */
-    overflow: auto; /* Prevent content overflow */
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
 }
 
-/* Style for the left image section */
+/* Main Body Section */
+main {
+    display: flex; /* Enable side-by-side layout for the main body */
+    flex-wrap: nowrap; /* Prevent wrapping; ensure the halves remain side-by-side */
+    height: calc(100vh - 80px); /* Full height minus header height (adjust as needed) */
+}
+
+/* Left Image Section */
 .image-section {
+    flex: 1; /* Split into half width */
     background: url('assets/images/CornSyringe.jpg') no-repeat center center;
     background-size: cover; /* Ensure the image covers the section */
+    min-width: 50%;
+    min-height: 100%; /* Ensure it fills the available height */
 }
 
-/* Style for the right text section */
+/* Right Text Section */
 .text-section {
+    flex: 1; /* Split into half width */
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center content */
-    background-color: white; /* Optional: Add a background color */
+    justify-content: center; /* Center the text vertically */
+    background-color: white;
+    min-width: 50%;
 }
 
-/* Style text within the text section */
+/* Text styles */
 .text-section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -43,4 +57,16 @@ body, html {
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
+}
+
+/* Responsive Design: Stacking for small screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .image-section, .text-section {
+        min-width: 100%;
+        height: 50vh; /* Each section takes half the height */
+    }
 }
