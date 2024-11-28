@@ -70,3 +70,45 @@ main {
         height: 50vh; /* Each section takes half the height */
     }
 }
+
+/* Navigation Styles */
+nav {
+    display: flex; /* Align links horizontally */
+    justify-content: center; /* Center the navigation links */
+    gap: 15px; /* Add spacing between links */
+    background-color: #06402b; /* Match the header background color */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: yellow; /* Default text color for links */
+    background-color: transparent; /* No background for a clean button look */
+    padding: 10px 20px; /* Add padding to make it button-like */
+    border: 1px solid white; /* Add a border around the button */
+    border-radius: 5px; /* Optional: Round the corners */
+    font-size: 1rem; /* Adjust font size */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: #06402b; /* Change text color on hover */
+    background-color: white; /* Invert colors on hover */
+    cursor: pointer; /* Show pointer cursor */
+}
+
+/* Active/Current Page Link */
+nav a.active {
+    background-color: white; /* Highlight active page */
+    color: #06402b; /* Invert text color for visibility */
+    font-weight: bold; /* Optional: Bold text for the active link */
+}
+
+
+
+
+
+
+
+
