@@ -119,18 +119,6 @@ main {
             cursor: pointer;
         }
 
-.container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 90%;
-            max-width: 1200px;
-            margin: 40px auto;
-            background: white;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
         @media (max-width: 768px) {
             nav {
                 display: none;
@@ -160,6 +148,18 @@ main {
         header h1 {
             margin: 0;
             font-size: 1.8rem;
+        }
+            
+            .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
         .image-section {
