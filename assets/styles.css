@@ -11,7 +11,9 @@ header {
     background-color: #0073e6;
     color: white;
     text-align: center;
-    padding: 0px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 header h1 {
