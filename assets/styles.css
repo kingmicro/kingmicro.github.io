@@ -32,7 +32,6 @@ main {
             width: 90%;
             max-width: 1200px;
             margin: 40px auto;
-            background: white;
             border: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
