@@ -77,12 +77,12 @@ nav {
     justify-content: center; /* Center the navigation links */
     gap: 15px; /* Add spacing between links */
     background-color: #06402b; /* Match the header background color */
-    padding: 10px;
+    padding: 0px;
 }
 
 nav a {
     text-decoration: none; /* Remove underline */
-    color: yellow; /* Default text color for links */
+    color: white; /* Default text color for links */
     background-color: transparent; /* No background for a clean button look */
     padding: 10px 20px; /* Add padding to make it button-like */
     border: 1px solid white; /* Add a border around the button */
@@ -93,7 +93,7 @@ nav a {
 
 /* Hover Effect */
 nav a:hover {
-    color: #06402b; /* Change text color on hover */
+    color: black; /* Change text color on hover */
     background-color: white; /* Invert colors on hover */
     cursor: pointer; /* Show pointer cursor */
 }
