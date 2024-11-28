@@ -26,6 +26,18 @@ main {
     height: calc(100vh - 80px); /* Full height minus header height (adjust as needed) */
 }
 
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
 /* Left Image Section */
 .image-section {
     flex: 1; /* Split into half width */
