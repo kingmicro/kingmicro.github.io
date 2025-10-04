@@ -12,10 +12,13 @@
     /* Top text section (intro) */
     .intro-section {
       background-color: white;
-      padding: 80px 60px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: left;
+      min-height: 100vh;           /* full screen height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;     /* vertically center the text */
+      align-items: flex-start;     /* left align text */
+      padding: 60px 80px;
+      max-width: none;
     }
 
     .intro-section h1 {
@@ -163,6 +166,12 @@
       </p>
     </div>
   </section>
+
+  <div class="contact-footer">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:w.l.king@soton.ac.uk">w.l.king@soton.ac.uk</a></p>
+        <p>Life Science Building (85), School of Biological Sciences, University of Southampton</p>
+      </div>
     
     <footer>
         <p>© 2024 KingMicroLab</p>
