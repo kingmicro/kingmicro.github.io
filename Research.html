@@ -5,7 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | My Website</title>
     <link rel="stylesheet" href="assets/styles.css">
+
+    <style>
+    /* Page-specific layout only */
+    main {
+      display: flex;
+      flex-wrap: nowrap;
+      height: calc(100vh - 80px); /* full height minus the header height */
+    }
+
+    /* Left image section */
+    .image-section {
+      flex: 1;
+      background: url('assets/images/research_main.jpg') no-repeat center center;
+      background-size: cover;
+      min-width: 50%;
+      min-height: 100%;
+    }
+
+    /* Right text section */
+    .text-section {
+      flex: 1;
+      background-color: white;
+      padding: 40px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    /* Text styling */
+    .text-section h1 {
+      color: #06402b;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .text-section h2 {
+      color: #06402b;
+      margin-top: 1.8em;
+      font-size: 1.3rem;
+    }
+
+    .text-section p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.2em;
+    }
+
+    .text-section img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    /* Responsive stacking on smaller screens */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        height: auto;
+      }
+      .image-section, .text-section {
+        min-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
+    
 <body>
     <header>
         <nav>
