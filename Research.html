@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | My Website</title>
-    <link rel="stylesheet" href="assets/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | KingMicroLab</title>
+  <link rel="stylesheet" href="assets/styles.css" />
 
-    <style>
-    /* Page-specific layout only */
-    main {
-      display: flex;
-      flex-wrap: nowrap;
-      height: calc(100vh - 80px); /* full height minus the header height */
-    }
+  <style>
+    /* --- Page-Specific Styles --- */
 
-    /* Left image section */
-    .image-section {
-      flex: 1;
-      background: url('assets/images/research_main.jpg') no-repeat center center;
-      background-size: cover;
-      min-width: 50%;
-      min-height: 100%;
-    }
-
-    /* Right text section */
-    .text-section {
-      flex: 1;
+    /* Top text section (intro) */
+    .intro-section {
       background-color: white;
-      padding: 40px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      padding: 80px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
     }
 
-    /* Text styling */
-    .text-section h1 {
+    .intro-section h1 {
       color: #06402b;
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin-bottom: 20px;
     }
 
-    .text-section h2 {
-      color: #06402b;
-      margin-top: 1.8em;
-      font-size: 1.3rem;
+    .intro-section p {
+      color: #333;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.5em;
     }
 
-    .text-section p {
+    /* Split sections (image + text) */
+    .split {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100vh;
+    }
+
+    .split .image-section {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      min-width: 50%;
+    }
+
+    .split .text-section {
+      flex: 1;
+      background: white;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .split .text-section h2 {
+      color: #06402b;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+
+    .split .text-section p {
       color: #333;
       font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1.2em;
+      line-height: 1.7;
     }
 
-    .text-section img {
-      width: 100%;
-      border-radius: 8px;
-      margin: 20px 0;
+    /* Alternate layout for visual balance */
+    .split.reverse {
+      flex-direction: row-reverse;
     }
 
-    /* Responsive stacking on smaller screens */
+    /* Responsive */
     @media (max-width: 768px) {
-      main {
+      .split {
         flex-direction: column;
         height: auto;
       }
-      .image-section, .text-section {
-        min-width: 100%;
-        height: auto;
+
+      .split.reverse {
+        flex-direction: column;
+      }
+
+      .split .text-section {
+        padding: 40px;
       }
     }
   </style>
@@ -86,61 +101,68 @@
         </nav>
     </header>
 
-<!-- Split layout: image left, text right -->
-    
-<main>
+    <!-- 🧬 Intro Section -->
+  <section class="intro-section">
+    <h1>Research at KingMicroLab</h1>
+    <p>
+      Our research explores the intricate relationships between plant roots and their microbial partners.
+      We focus on understanding how root exudates shape microbial communities, and how we can leverage
+      these relationships to improve plant stress tolerance and soil health.
+    </p>
+  </section>
 
-    <div class="text-section">
-      <h1>Research at KingMicroLab</h1>
-      <p>
-        Our research explores the intricate relationships between plant roots and their microbial partners.
-        We focus on understanding how root exudates shape microbial communities, and how we can leverage
-        these relationships to improve plant stress tolerance and soil health.
-      </p>
-        
-  <!-- Section 1 -->
+    <!-- 🪴 Section 1 -->
   <section class="split">
     <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
     <div class="text-section">
       <h2>Manipulating Below-Ground Feedback</h2>
-      <p>Roots form dynamic relationships with microorganisms essential for healthy plant functioning and stress resilience.
-        We investigate how drought, nutrient stress, and exudation patterns influence these microbial relationships,
-        linking root physiology to microbial community structure and function.</p>
+      <p>
+        Roots form dynamic relationships with microorganisms essential for healthy plant functioning and
+        stress resilience. We investigate how drought, nutrient stress, and exudation patterns influence
+        these microbial relationships, linking root physiology to microbial community structure and function.
+      </p>
     </div>
   </section>
 
-  <!-- Section 2 -->
-  <section class="split">
+  <!-- 🦠 Section 2 (reversed layout) -->
+  <section class="split reverse">
     <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
     <div class="text-section">
       <h2>Manipulating Biotic Interactions</h2>
-      <p>We explore how microbial interactions shape community establishment and functioning, using both bottom-up and
-        top-down approaches to manipulate microbial diversity in soil. This helps us understand how biodiversity loss
-        impacts essential soil functions.</p>
+      <p>
+        We explore how microbial interactions shape community establishment and functioning, using both
+        bottom-up and top-down approaches to manipulate microbial diversity in soil. This helps us
+        understand how biodiversity loss impacts essential soil functions.
+      </p>
     </div>
   </section>
 
-  <!-- Section 3 -->
+  <!-- 🌱 Section 3 -->
   <section class="split">
     <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
     <div class="text-section">
       <h2>Microbial Physiology and Function</h2>
-      <p>We study how both microbe–microbe and microbe–host interactions influence microbial physiology and adaptation
-        to new environments. By linking microbial traits with host exudation patterns, we identify mechanisms driving
-        cooperation and competition in root microbiomes.</p>
+      <p>
+        We study how both microbe–microbe and microbe–host interactions influence microbial physiology
+        and adaptation to new environments. By linking microbial traits with host exudation patterns,
+        we identify mechanisms driving cooperation and competition in root microbiomes.
+      </p>
     </div>
+  </section>
 
-    <!-- Section 4 -->
-<section class="split">
+  <!-- 🌍 Section 4 (reversed layout) -->
+  <section class="split reverse">
     <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
     <div class="text-section">
       <h2>Fieldwork and Functional Assays</h2>
-      <p>We combine high-throughput sequencing with field and lab-based assays to examine how diversity, nutrient cycling,
-        and microbial function respond to ecological change. From forest ecosystems to agricultural soils, our experiments
-        aim to connect microbial processes with measurable ecosystem outcomes</p>
+      <p>
+        We combine high-throughput sequencing with field and lab-based assays to examine how diversity,
+        nutrient cycling, and microbial function respond to ecological change. From forest ecosystems
+        to agricultural soils, our experiments aim to connect microbial processes with measurable
+        ecosystem outcomes.
+      </p>
     </div>
   </section>
-</main>
     
     <footer>
         <p>© 2024 KingMicroLab</p>
