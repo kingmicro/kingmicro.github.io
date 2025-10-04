@@ -105,6 +105,33 @@ nav a.active {
     font-weight: bold; /* Optional: Bold text for the active link */
 }
 
+.split {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.split .image-section {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.split .text-section {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+    height: auto;
+  }
+}
 
 
 
