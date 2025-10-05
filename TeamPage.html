@@ -5,7 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | My Website</title>
     <link rel="stylesheet" href="assets/styles.css">
+
+    <style>
+    /* --- Page-Specific Styles --- */
+
+    /* Top text section (intro) */
+    .intro-section {
+      background-color: white;
+      padding: 30px 30px;   /* more top & bottom padding */
+      
+      margin: 0 auto;
+      justify-content: center;   /* vertical centering */
+      align-items: center;       /* horizontal centering */
+      text-align: center;        /* center text inside */
+    }
+
+    .intro-section h1 {
+      color: #06402b;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .intro-section p {
+      color: #333;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.5em;
+    }
+
+    /* Split sections (image + text) */
+    .split {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100vh;
+    }
+
+    .split .image-section {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      min-width: 50%;
+    }
+
+    .split .text-section {
+      flex: 1;
+      background: white;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .split .text-section h2 {
+      color: #06402b;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+
+    .split .text-section p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* Alternate layout for visual balance */
+    .split.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .split {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .split.reverse {
+        flex-direction: column;
+      }
+
+      .split .text-section {
+        padding: 40px;
+      }
+    }
+  </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,12 +102,105 @@
             <a href="Contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <h1>About Us</h1>
-        <p>This is the About page where you can learn more about us.</p>
-    </main>
+
+    <!-- 🧬 Intro Section -->
+  <section class="intro-section">
+    <h1>Research at KingMicroLab</h1>
+    <p>
+      Our research explores the intricate relationships between plant roots and their microbial partners.
+      We focus on understanding how root exudates shape microbial communities, and how we can leverage
+      these relationships to improve plant stress tolerance and soil health.
+    </p>
+  </section>
+
+    <!-- 🪴 Section 1 -->
+  <section class="split">
+    <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
+    <div class="text-section">
+      <h2>Dr. Will King</h2>
+      <p>
+        Roots form dynamic relationships with microorganisms essential for healthy plant functioning and
+        stress resilience. We investigate how drought, nutrient stress, and exudation patterns influence
+        these microbial relationships, linking root physiology to microbial community structure and function.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🦠 Section 2 (reversed layout) -->
+  <section class="split reverse">
+    <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
+    <div class="text-section">
+      <h2>Sarah Connery, PhD student</h2>
+      <p>
+        We explore how microbial interactions shape community establishment and functioning, using both
+        bottom-up and top-down approaches to manipulate microbial diversity in soil. This helps us
+        understand how biodiversity loss impacts essential soil functions.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🌱 Section 3 -->
+  <section class="split">
+    <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
+    <div class="text-section">
+      <h2>James Goodman, PhD student</h2>
+      <p>
+        We study how both microbe–microbe and microbe–host interactions influence microbial physiology
+        and adaptation to new environments. By linking microbial traits with host exudation patterns,
+        we identify mechanisms driving cooperation and competition in root microbiomes.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🌍 Section 4 (reversed layout) -->
+  <section class="split reverse">
+    <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
+    <div class="text-section">
+      <h2>Xinyi Cen, PhD student</h2>
+      <p>
+        We combine high-throughput sequencing with field and lab-based assays to examine how diversity,
+        nutrient cycling, and microbial function respond to ecological change. From forest ecosystems
+        to agricultural soils, our experiments aim to connect microbial processes with measurable
+        ecosystem outcomes.
+      </p>
+    </div>
+  </section>
+
+    <!-- 🌱 Section 5 -->
+  <section class="split">
+    <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
+    <div class="text-section">
+      <h2>Dongjie Han, PhD student</h2>
+      <p>
+        We study how both microbe–microbe and microbe–host interactions influence microbial physiology
+        and adaptation to new environments. By linking microbial traits with host exudation patterns,
+        we identify mechanisms driving cooperation and competition in root microbiomes.
+      </p>
+    </div>
+  </section>
+
+    <!-- 🌍 Section 6 (reversed layout) -->
+  <section class="split reverse">
+    <div class="image-section" style="background-image: url('assets/images/KingLabLogo_HighRes.png');"></div>
+    <div class="text-section">
+      <h2>Kishor Karthi Karuppaiah, Master's student</h2>
+      <p>
+        We combine high-throughput sequencing with field and lab-based assays to examine how diversity,
+        nutrient cycling, and microbial function respond to ecological change. From forest ecosystems
+        to agricultural soils, our experiments aim to connect microbial processes with measurable
+        ecosystem outcomes.
+      </p>
+    </div>
+  </section>
+
+  <div class="contact-footer">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:w.l.king@soton.ac.uk">w.l.king@soton.ac.uk</a></p>
+        <p>Life Science Building (85), School of Biological Sciences, University of Southampton</p>
+      </div>
+    
     <footer>
-        <p>© 2024 My Website</p>
+        <p>© 2024 KingMicroLab</p>
     </footer>
 </body>
 </html>
