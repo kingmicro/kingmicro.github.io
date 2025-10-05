@@ -80,6 +80,7 @@
       .split {
         flex-direction: column;
         height: auto;
+        align-items: stretch;
       }
 
       .split.reverse {
@@ -91,10 +92,14 @@
       }
 
       .split .image-section {
-        height: 250px;
-        min-height: 250px;          /* smaller image height on mobile */
+        width: 100%;                   /* full width of container */
+        min-height: 250px;             /* visible image height */
+        height: auto;                  /* let image scale naturally */
+        background-size: cover;        /* cover the container */
+        background-position: center center; /* focus on middle of image */
   }
     }
+        
   </style>
 </head>
 
