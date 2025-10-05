@@ -37,6 +37,10 @@
     .split {
       display: flex;
       flex-wrap: nowrap;
+      align-items: center;   /* vertically align image/text */
+      min-height: 400px;     /* give a nice baseline height instead of full screen */
+      height: auto;          /* allow height to shrink to fit content */
+      margin: 20px 0;        /* small space between sections */
     }
 
     .split .image-section {
@@ -49,7 +53,7 @@
     .split .text-section {
       flex: 1;
       background: white;
-      padding: 15px;
+      padding: 20px 30px;    /* slightly less padding */
       display: flex;
       flex-direction: column;
       justify-content: center;
