@@ -36,15 +36,14 @@
     /* Split sections (image + text) */
     .split {
       display: flex;
-      flex-wrap: nowrap;
-      align-items: center;   /* vertically align image/text */
-      min-height: 400px;     /* give a nice baseline height instead of full screen */
+      align-items: stretch;
+      min-height: 300px;     /* give a nice baseline height instead of full screen */
       height: auto;          /* allow height to shrink to fit content */
-      margin: 20px 0;        /* small space between sections */
     }
 
     .split .image-section {
       flex: 1;
+      min-height: 300px;
       background-size: cover;
       background-position: center;
       min-width: 50%;
