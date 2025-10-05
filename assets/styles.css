@@ -133,6 +133,19 @@ nav a.active {
   }
 }
 
+.position-list {
+  list-style-type: disc;   /* bullet points */
+  padding-left: 20px;      /* indent slightly */
+  margin: 10px 0 20px 0;   /* smaller gap above and below */
+}
+
+.position-list li {
+  margin-bottom: 5px;      /* tighter spacing between items */
+  color: #333;             /* consistent with paragraph text */
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 
 
 
