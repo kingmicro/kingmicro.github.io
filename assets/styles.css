@@ -146,6 +146,83 @@ nav a.active {
   line-height: 1.4;
 }
 
+/* === NAVBAR STYLES (Hamburger) === */
+header {
+  background-color: #06402b;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Navigation links (desktop) */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #06402b;
+}
+
+/* Hamburger button (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* === MOBILE STYLES === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* show hamburger */
+  }
+
+  .nav-links {
+    display: none; /* hide menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* below the header */
+    left: 0;
+    width: 100%;
+    background-color: #06402b;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  /* Show nav when active */
+  .nav-links.active {
+    display: flex;
+  }
+}
 
 
 
