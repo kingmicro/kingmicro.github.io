@@ -6,8 +6,9 @@
     <title>Website with Header</title>
     <link rel="stylesheet" href="assets/styles.css">
 
-    <style>
-    /* Brown welcome banner */
+  <style>
+
+ /* Brown welcome banner */
     .welcome-banner {
       background-color: #5B3A29; /* brown color */
       color: white;
@@ -19,9 +20,103 @@
       margin: 0;
       font-size: 2rem;
     }
+      
+    /* --- Page-Specific Styles --- */
+
+    /* Top text section (intro) */
+    .intro-section {
+      background-color: white;
+      padding: 30px 30px;   /* more top & bottom padding */
+      
+      margin: 0 auto;
+      justify-content: center;   /* vertical centering */
+      align-items: center;       /* horizontal centering */
+      text-align: center;        /* center text inside */
+    }
+
+    .intro-section h1 {
+      color: #06402b;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .intro-section p {
+      color: #333;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.5em;
+    }
+
+    /* --- Uniform Team Section Layout --- */
+    .split {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: stretch;      /* image + text equal height */
+      height: 500px;             /* uniform height across all sections */
+      margin: 0;            /* consistent spacing between sections */
+    }
+
+    .split .image-section {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .split .text-section {
+      flex: 1;
+      background: white;
+      padding: 30px;    /* slightly less padding */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .split .text-section h2 {
+      color: #06402b;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+
+    .split .text-section p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* Alternate layout for visual balance */
+    .split.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* --- Mobile: let it resize automatically --- */
+    /* Responsive */
+    @media (max-width: 768px) {
+      .split {
+        flex-direction: column;
+        height: auto;
+        align-items: stretch;
+      }
+
+      .split.reverse {
+        flex-direction: column;
+      }
+
+      .split .text-section {
+        padding: 0px;
+      }
+
+      .split .image-section {
+        width: 100%;                   /* full width of container */
+        min-height: 250px;             /* visible image height */
+        height: auto;                  /* let image scale naturally */
+        background-size: cover;        /* cover the container */
+        background-position: center center; /* focus on middle of image */
+  }
+    }
+        
   </style>
+</head>
     
-</head> 
 <body>
 
 <header>
