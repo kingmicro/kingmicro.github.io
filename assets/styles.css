@@ -19,6 +19,28 @@ header h1 {
     font-size: 1.8rem;
 }
 
+.home-hero {
+  position: relative;
+  background-image: url('assets/images/WelshForest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 20px;
+  text-align: center;
+  color: white;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.home-hero > * {
+  position: relative;
+}
+
 /* Main Body Section */
 main {
     display: flex; /* Enable side-by-side layout for the main body */
