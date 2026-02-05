@@ -35,7 +35,7 @@ header h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: 0;
 }
 
@@ -46,7 +46,7 @@ header h1 {
 
 .home-hero h2,
 .home-hero p {
-      colour: white
+    colour: #ffffff;
     text-shadow:
     -1px -1px 0 #000,
      1px -1px 0 #000,
