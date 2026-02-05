@@ -27,7 +27,7 @@ header h1 {
   background-repeat: no-repeat;
   padding: 90px 20px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   overflow: hidden;
 }
 
@@ -42,6 +42,15 @@ header h1 {
 .home-hero * {
   position: relative;
   z-index: 1;
+}
+
+.home-hero h2,
+.home-hero p {
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
 }
 
 /* Main Body Section */
