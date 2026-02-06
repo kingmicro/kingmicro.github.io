@@ -262,6 +262,39 @@ header {
   margin: 0;         /* 👈 removes vertical offset */
 }
 
+/* === 4 Column Image + Text Section === */
+.four-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.column-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;      /* keeps all images same size */
+  border-radius: 6px;
+}
+
+.column-item p {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.column-item img {
+  transition: transform 0.3s ease;
+}
+
+.column-item img:hover {
+  transform: scale(1.03);
+}
+
 /* === MOBILE STYLES === */
 @media (max-width: 768px) {
   .hamburger {
@@ -299,6 +332,18 @@ header {
     width: 90px;
   }
     
+}
+
+@media (max-width: 900px) {
+  .four-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .four-column {
+    grid-template-columns: 1fr;
+  }
 }
 
 
