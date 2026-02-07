@@ -322,6 +322,103 @@ header {
   color: #0a7042;
 }
 
+/* === Footer === */
+.site-footer {
+  background-color: #06402b;
+  color: white;
+  padding: 40px 20px 25px;
+  margin-top: 70px;
+  border-top: 4px solid #0a7042;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer-name {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.footer-affiliation {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.footer-contact {
+  margin-bottom: 20px;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+  color: #cfe6db;
+}
+
+/* Social links */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* === Social icon styling (SVGs) === */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+
 /* === MOBILE STYLES === */
 @media (max-width: 768px) {
   .hamburger {
