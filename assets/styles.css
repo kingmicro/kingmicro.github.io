@@ -433,9 +433,9 @@ header {
     top: 0;
     left: 0;
     width: 80%;        /* Change screen menu */
-    height: 60vh;     /* Change screen menu */
+    height: 80%;     /* Change screen menu */
     background-color: #06402b;
-    padding-top: 60px; /* space for header/hamburger */
+    padding-top: 10px; /* space for header/hamburger */
     overflow-y: auto;  /* allow scrolling if menu is tall */
     z-index: 1050;     /* above content but below hamburger */
   }
