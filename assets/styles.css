@@ -430,8 +430,8 @@ header {
     display: none; /* hide menu initially */
     flex-direction: column;
     position: fixed;  /* fix it to viewport instead of absolute */
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 10%;
     width: 80%;        /* Change screen menu */
     height: 80%;     /* Change screen menu */
     background-color: #06402b;
