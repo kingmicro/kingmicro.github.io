@@ -470,6 +470,38 @@ header {
   }
 }
 
+/* === Contact section with photo === */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+/* Photo column */
+.contact-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; /* circular portrait */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Mobile: stack photo above */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-photo img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+}
 
 
 
