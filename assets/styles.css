@@ -426,44 +426,26 @@ header {
   }
 
   .nav-links {
-    display: none;
+    display: none; /* hide menu initially */
     flex-direction: column;
-    position: fixed;            /* cover the viewport */
-    top: 0;
+    position: absolute;
+    top: 60px; /* below the header */
     left: 0;
     width: 100%;
-    height: 100vh;              /* full viewport height */
-    background-color: #06402b;  /* menu background */
-    padding-top: 80px;          /* space for header */
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 9999;              /* on top of everything */
-    overflow-y: auto;           /* scroll if too tall */
-    transition: transform 0.3s ease;
-    transform: translateY(-100%); /* hide above viewport initially */
+    background-color: #06402b;
+    padding: 10px 0;
+    z-index: 9999;
   }
 
-  /* Menu links styling */
   .nav-links a {
     display: block;
-    font-size: 1.2rem;
-    padding: 15px 10px;
-    margin: 5px 0;
-    border: 1px solid white;
-    border-radius: 5px;
     text-align: center;
-    background-color: transparent;
+    margin: 5px 0;
   }
 
- .nav-links a:hover {
-    background-color: white;
-    color: #06402b;
-  }    
-
-  /* When menu is active (clicked) */
+  /* Show nav when active */
   .nav-links.active {
     display: flex;
-    transform: translateY(0); /* slide down */
   }
 
   .icon-text {
