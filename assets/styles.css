@@ -475,7 +475,7 @@ header {
   display: flex;
   gap: 40px;
   max-width: 1100px;
-  margin: 60px auto;
+  margin: 0 auto;              /* 🔥 remove vertical margin */
   padding: 0 20px;
   align-items: center;
 }
@@ -487,6 +487,15 @@ header {
   object-fit: cover;
   border-radius: 50%; /* circular portrait */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.contact-photo {
+  flex-shrink: 0;   /* 👈 prevents flex weirdness */
+}
+
+.contact-wrapper .footer-content {
+  text-align: left;        /* 👈 fixes vertical stacking */
+  margin: 0;               /* 👈 disables auto-centering */
 }
 
 /* Mobile: stack photo above */
