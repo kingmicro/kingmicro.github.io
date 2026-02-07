@@ -423,6 +423,7 @@ header {
 @media (max-width: 768px) {
   .hamburger {
     display: block; /* show hamburger */
+    z-index: 1100;
   }
 
   .nav-links {
@@ -434,7 +435,7 @@ header {
     width: 100%;
     background-color: #06402b;
     padding: 10px 0;
-    z-index: 9999;
+    z-index: 1000;
   }
 
   .nav-links a {
