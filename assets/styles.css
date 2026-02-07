@@ -432,8 +432,8 @@ header {
     position: fixed;  /* fix it to viewport instead of absolute */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;     /* full screen menu */
+    width: 80%;        /* Change screen menu */
+    height: 60vh;     /* Change screen menu */
     background-color: #06402b;
     padding-top: 60px; /* space for header/hamburger */
     overflow-y: auto;  /* allow scrolling if menu is tall */
